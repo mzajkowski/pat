@@ -1,0 +1,6 @@
+version: 1.0.{build}
+before_build:
+- cmd: nuget restore src\PAT.sln
+build:
+  project: src/PAT.sln
+  verbosity: minimal
